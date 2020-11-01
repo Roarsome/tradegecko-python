@@ -5,7 +5,7 @@ setup(
     name = 'tradegecko-python',
     version = '0.0.7',
     description = 'Python wrapper for TradeGecko REST API',
-    author = 'Drew Kowalik, Chris Clark',
+    author = 'Drew Kowalik, Chris Clark (modified by Jack Oat)',
     author_email = 'team@epantry.com',
     url = 'https://github.com/epantry/tradegecko-python',
     keywords = ['tradegecko'],
