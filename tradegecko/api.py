@@ -68,10 +68,10 @@ class ApiEndpoint(object):
         else:
             return False
 
-    # records filtered by field value
-    def filter(self, **kwargs):
+    # records filtered by field value (supports to filter same field diff values)
+    def filter(self, *args: tuple):
         uri = self.uri % ''
-        if self._send_request('GET', uri, params=kwargs) == 200:
+        if self._send_request('GET', uri, params=args) == 200:
             return self.rsp.json()
         else:
             return False
