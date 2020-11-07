@@ -67,3 +67,9 @@ class Order(ApiEndpoint):
         super(Order, self).__init__(base_uri, access_token)
         self.uri = self.base_uri + 'orders/%s'
         self._data_name = 'order'
+
+class OrderLineItem(ApiEndpoint):
+    def __init__(self, base_uri, access_token):
+        super(OrderLineItem, self).__init__(base_uri, access_token)
+        self.uri = self.base_uri + 'order_line_items/%s'
+        self._data_name = 'order_line_item'
